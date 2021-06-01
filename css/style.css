@@ -17,19 +17,19 @@ Contact Me: fatema131khaled@gmail.com
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    font-family: 'Montserrat'
+    -o-box-sizing: border-box
 }
 
 /* Start Styling */
 
 body {
+    font-family: 'Montserrat';
     background: linear-gradient(to left, #ffffff 0%, #dddddd 100%)
 }
 
 main {
     text-align: center;
-    margin: 70px auto
+    margin: 100px auto
 }
 
 h2,

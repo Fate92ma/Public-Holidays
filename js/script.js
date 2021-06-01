@@ -1,4 +1,5 @@
 // Dom Variables
+
 let DataInDom = document.getElementById("DataInDom"),
 
     h4 = document.getElementsByTagName("h4")[0],
@@ -6,6 +7,7 @@ let DataInDom = document.getElementById("DataInDom"),
     hideBtn = document.getElementById("hideBtn"),
 
     // Data Variables    
+
     myRequest,
 
     myData,
@@ -17,11 +19,10 @@ let DataInDom = document.getElementById("DataInDom"),
     SecURL;
 
 // Events
+
 window.addEventListener("load", getData);
 
 hideBtn.addEventListener("click", goHome);
-
-/**************************************************************************************************/
 
 // function to get first data
 function getData() {
@@ -56,8 +57,6 @@ function getData() {
 
 }
 
-/**************************************************************************************************/
-
 // function to set second url based on user choice "key"
 function setCountryURL(key) {
 
@@ -67,16 +66,12 @@ function setCountryURL(key) {
 
 }
 
-/**************************************************************************************************/
-
 // function to save "country" user choice to display
 function getName(str) {
 
     h4.innerHTML = `Holidays in: <strong>${str}</strong>`
 
 }
-
-/**************************************************************************************************/
 
 // function to get second data based on user choice
 function secondGetData() {
@@ -95,11 +90,12 @@ function secondGetData() {
 
                 DataInDom.innerHTML +=
 
-                `<div>
-                <h3>Holiday:</h3>
-                <p><strong>Date:</strong> ${item.date}</p>
-                <p><strong>Name:</strong> ${item.name}</p>
-                <p><strong>Local Name:</strong> ${item.localName}</p></div>`
+                    `<div>
+                        <h3>Holiday:</h3>
+                        <p><strong>Date:</strong> ${item.date}</p>
+                        <p><strong>Name:</strong> ${item.name}</p>
+                        <p><strong>Local Name:</strong> ${item.localName}</p>
+                    </div>`
 
             })
 
@@ -119,13 +115,9 @@ function secondGetData() {
 
 }
 
-/**************************************************************************************************/
-
 // function to leave result page and go to home page
 function goHome() {
-    
-    location.reload(true)
-    
-}
 
-/**************************************************************************************************/
+    location.reload(true)
+
+}
