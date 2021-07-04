@@ -47,22 +47,26 @@ h4 {
 }
 
 #DataInDom {
+    width: 40%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     padding: 0 10px;
     margin: 40px auto
 }
 
 #DataInDom a {
-    margin: 10px;
+    margin: 10px auto;
     font-size: 20px;
     display: block;
     width: fit-content;
     font-weight: bold;
     cursor: pointer;
-    color: dodgerblue;
-    border-bottom: 1px dotted;
+    color: dodgerblue
+}
+
+#DataInDom a:hover {
+    color: blue
 }
 
 strong {
@@ -101,6 +105,30 @@ div p:nth-of-type(2) {
     border-radius: 4px;
     color: darkred;
     display: none
+}
+
+@media (max-width: 1200px) {
+    #DataInDom {
+        width: 50%
+    }
+}
+
+@media (max-width: 1024px) {
+    #DataInDom {
+        width: 60%
+    }
+}
+
+@media (max-width: 768px) {
+    #DataInDom {
+        width: 80%
+    }
+}
+
+@media (max-width: 480px) {
+    #DataInDom {
+        width: 100%
+    }
 }
 
 /* End Styling */
